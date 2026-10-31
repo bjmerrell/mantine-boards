@@ -10,7 +10,7 @@ import {
   TextInput,
 } from "@mantine/core"
 import { Notification, SearchNormal1, Setting2 } from "iconsax-react"
-import { MantineLogoRounded } from "~/components/MantineLogoRounded"
+import { BrandMark } from "~/components/BrandMark"
 import User from "../assets/avatars/avatar-3.jpg"
 import ThemeSwitch from "../components/ThemeSwitch"
 import classes from "./styles/Header.module.css"
@@ -31,7 +31,7 @@ export default function Header({ opened, toggle }: Props) {
         size="sm"
       />
       <Flex gap="sm" align="center">
-        <MantineLogoRounded color="black" size={30} />
+        <BrandMark color="black" size={30} />
         <Text fz={18} fw={600}>
           Tasker
         </Text>

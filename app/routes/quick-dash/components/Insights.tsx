@@ -1,6 +1,6 @@
 import { ActionIcon, Box, Flex, Text, rem } from "@mantine/core"
 import dayjs from "dayjs"
-import { MantineLogoRounded } from "~/components/MantineLogoRounded"
+import { BrandMark } from "~/components/BrandMark"
 import classes from "./styles/Insights.module.css"
 
 export default function Insights() {
@@ -9,7 +9,7 @@ export default function Insights() {
       <Flex w="100%" align="center" justify="space-between">
         <Flex align="center" gap={14}>
           <Box className={classes.planLogoContainer}>
-            <MantineLogoRounded color="orange.5" size={24} />
+            <BrandMark color="orange.5" size={24} />
           </Box>
           <Flex direction="column" align="start" gap={4}>
             <Text fw={600} lh={1} fz={18} lts={-0.4} c="white">

@@ -1,6 +1,6 @@
 import { AppShell, Flex, Group, Text } from "@mantine/core"
 import { Link } from "@remix-run/react"
-import { MantineLogo } from "~/components/MantineLogo"
+import { BrandMark } from "~/components/BrandMark"
 import ThemeSwitch from "~/components/ThemeSwitch"
 import SearchControl from "../components/SearchControl"
 import classes from "./styles/AppLayout.module.css"
@@ -23,7 +23,7 @@ export default function AppLayout({ children }: Children) {
         >
           <Link to="/">
             <Flex flex={1} ff="Greycliff" gap="sm" align="center">
-              <MantineLogo size={30} color="black" type="mark" />
+              <BrandMark size={30} color="black" />
               <Text visibleFrom="md" className={classes.logo_title} fz={24}>
                 Mantine Boards
               </Text>

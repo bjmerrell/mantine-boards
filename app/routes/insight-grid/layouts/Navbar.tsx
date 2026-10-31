@@ -30,14 +30,14 @@ import {
   Scroll,
   Setting2,
 } from "iconsax-react"
-import { MantineLogoRounded } from "~/components/MantineLogoRounded"
+import { BrandMark } from "~/components/BrandMark"
 import classes from "./styles/Navbar.module.css"
 
 export default function Navbar() {
   return (
     <Stack h="100%" gap={20} px="md" py="lg">
       <Flex gap={8} w="100%" align="center">
-        <MantineLogoRounded size={50} color="black" />
+        <BrandMark size={50} color="black" />
         <Menu shadow="md" width={200}>
           <Menu.Target>
             <UnstyledButton w="100%">

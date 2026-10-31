@@ -61,7 +61,7 @@ export default function AppHeader({ opened, toggle }: Props) {
 
         <Menu shadow="md" width={200}>
           <Menu.Target>
-            <Avatar src={"https://ui.shadcn.com/avatars/02.png"} radius="xl" />
+            <Avatar name="Xsphere" color="initials" radius="xl" />
           </Menu.Target>
 
           <Menu.Dropdown>

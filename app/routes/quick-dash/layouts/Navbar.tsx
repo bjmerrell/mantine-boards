@@ -30,7 +30,7 @@ import {
 import Figma from "~/assets/logos/figma.svg"
 import Framer from "~/assets/logos/framer.svg"
 import Webflow from "~/assets/logos/webflow.svg"
-import { MantineLogoRounded } from "~/components/MantineLogoRounded"
+import { BrandMark } from "~/components/BrandMark"
 import ThemeSwitch from "../components/ThemeSwitch"
 import { useStore } from "../store/client/useStore"
 import classes from "./styles/Navbar.module.css"
@@ -55,7 +55,7 @@ export default function Navbar() {
           justify={isNavbarCollapse ? "center" : "space-between"}
         >
           <Flex align="center" gap={6}>
-            <MantineLogoRounded size={30} color="accent" />
+            <BrandMark size={30} color="accent" />
             {!isNavbarCollapse && (
               <Text className={classes.appTitle} fw={600}>
                 Mantine
@@ -284,7 +284,7 @@ export default function Navbar() {
           <Box className={classes.plan}>
             <Flex w="100%" direction="column" align="center" gap={2}>
               <Box className={classes.planLogoContainer}>
-                <MantineLogoRounded color="accent" size={24} />
+                <BrandMark color="accent" size={24} />
               </Box>
               <Text fw={600} fz={13} c="white">
                 View + Event Limit
