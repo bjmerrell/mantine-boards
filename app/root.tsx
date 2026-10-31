@@ -16,7 +16,6 @@ import {
   useNavigate,
   useRouteError,
 } from "@remix-run/react"
-import { Analytics } from "@vercel/analytics/react"
 import WorkInProgressImage from "~/assets/illustrations/work-in-progress.png"
 import AppLayout from "./layouts/AppLayout"
 import { useSyntaxHighlightStore } from "./store/syntax-highter-store"
@@ -84,7 +83,6 @@ export function Layout({ children }: Children) {
         </MantineProvider>
         <Scripts />
         <ScrollRestoration />
-        <Analytics />
       </body>
     </html>
   )
