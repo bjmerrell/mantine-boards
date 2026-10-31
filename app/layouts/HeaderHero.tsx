@@ -9,11 +9,9 @@ import {
   rem,
 } from "@mantine/core"
 import { IconFlame, IconMoon, IconShare } from "@tabler/icons-react"
-import { GithubIcon } from "~/assets/icons"
 import bannerImage from "~/assets/illustrations/hero-mockup.svg"
 import classes from "./styles/HeaderHero.module.css"
 
-const GIT_REPO = import.meta.env.VITE_GITHUB_REPO
 const MANTINE_DOC = import.meta.env.VITE_MANTINE_DOC
 
 const features = [
@@ -76,18 +74,6 @@ export default function HeaderHero() {
             rightSection={<IconShare size={18} />}
           >
             Get started with Mantine
-          </Button>
-          <Button
-            component="a"
-            href={GIT_REPO}
-            size="sm"
-            aria-label="go to github repository button"
-            target="_blank"
-            variant="default"
-            className={classes.control}
-            leftSection={<GithubIcon size={20} />}
-          >
-            GitHub
           </Button>
           <Button
             component="a"

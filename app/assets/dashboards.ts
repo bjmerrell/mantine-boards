@@ -1,4 +1,3 @@
-import { getDashboardRepoUrl } from "~/utils"
 import DashVista from "~/assets/preview-images/dash-vista.png"
 import InsightGrid from "~/assets/preview-images/insight-grid.png"
 import NeuraDash from "~/assets/preview-images/neura-dash.png"
@@ -13,7 +12,6 @@ export const dashboards = [
     description:
       "Use these Mantine UI custom dashboard component examples to create clean, responsive interfaces for data visualization and management. These component layouts leverage flexible grid structures and provide both light and dark theme options, perfect for displaying key metrics, charts, and interactive elements.",
     link: "neura-dash",
-    git_repo: getDashboardRepoUrl("neura-dash"),
   },
   {
     id: 2,
@@ -23,7 +21,6 @@ export const dashboards = [
     description:
       "Use these Mantine UI custom dashboard component examples to create clean, responsive interfaces for data visualization and management. These component layouts leverage flexible grid structures and provide both light and dark theme options, perfect for displaying key metrics, charts, and interactive elements.",
     link: "insight-grid",
-    git_repo: getDashboardRepoUrl("insight-grid"),
   },
   {
     id: 3,
@@ -33,7 +30,6 @@ export const dashboards = [
     description:
       "Use these Mantine UI custom dashboard component examples to create clean, responsive interfaces for data visualization and management. These component layouts leverage flexible grid structures and provide both light and dark theme options, perfect for displaying key metrics, charts, and interactive elements.",
     link: "dash-vista",
-    git_repo: getDashboardRepoUrl("dash-vista"),
   },
   {
     id: 4,
@@ -43,7 +39,6 @@ export const dashboards = [
     description:
       "Use these Mantine UI custom dashboard component examples to create clean, responsive interfaces for data visualization and management. These component layouts leverage flexible grid structures and provide both light and dark theme options, perfect for displaying key metrics, charts, and interactive elements.",
     link: "quick-dash",
-    git_repo: getDashboardRepoUrl("quick-dash"),
   },
 ] as const
 

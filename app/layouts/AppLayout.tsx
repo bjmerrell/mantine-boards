@@ -1,15 +1,10 @@
 import { AppShell, Flex, Group, Text } from "@mantine/core"
 import { Link } from "@remix-run/react"
-import { DiscordControl } from "~/components/DiscordControl"
 import { MantineLogo } from "~/components/MantineLogo"
 import ThemeSwitch from "~/components/ThemeSwitch"
-import { GithubControl } from "../components/GithubControl"
 import SearchControl from "../components/SearchControl"
 import { Footer } from "./Footer"
 import classes from "./styles/AppLayout.module.css"
-
-const GITHUB_LINK = import.meta.env.VITE_GITHUB_REPO
-const DISCORD_LINK = import.meta.env.VITE_DISCORD_ACC
 
 export default function AppLayout({ children }: Children) {
   return (
@@ -40,8 +35,6 @@ export default function AppLayout({ children }: Children) {
           </Link>
           <Flex align="center" gap="sm">
             <SearchControl />
-            <GithubControl link={GITHUB_LINK} />
-            <DiscordControl link={DISCORD_LINK} />
             <ThemeSwitch />
           </Flex>
         </Group>

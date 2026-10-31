@@ -16,7 +16,6 @@ import { IconCode, IconEye } from "@tabler/icons-react"
 import { FileContext } from "~/utils/getDashboardCode"
 import { Dashboard } from "~/assets/dashboards"
 import CodeSnippetTabs from "~/components/CodeSnippetTabs"
-import { GithubControl } from "~/components/GithubControl"
 import classes from "./styles/DetailLayout.module.css"
 
 interface Props {
@@ -83,8 +82,6 @@ export default function DetailLayout({ children, dashboard, codes }: Props) {
                 },
               ]}
             />
-
-            <GithubControl link={dashboard.git_repo} />
           </Flex>
         </Group>
 
