@@ -1,31 +1,22 @@
-import { useState } from "react"
 import {
   Anchor,
   Badge,
   Box,
   Breadcrumbs,
-  Center,
   Flex,
   Group,
-  SegmentedControl,
   Stack,
   Text,
-  rem,
 } from "@mantine/core"
-import { IconCode, IconEye } from "@tabler/icons-react"
-import { FileContext } from "~/utils/getDashboardCode"
 import { Dashboard } from "~/assets/dashboards"
-import CodeSnippetTabs from "~/components/CodeSnippetTabs"
 import classes from "./styles/DetailLayout.module.css"
 
 interface Props {
   children: React.ReactNode
   dashboard: Dashboard
-  codes: FileContext[]
 }
 
-export default function DetailLayout({ children, dashboard, codes }: Props) {
-  const [value, setValue] = useState("preview")
+export default function DetailLayout({ children, dashboard }: Props) {
   return (
     <Stack className={classes.root} gap={50}>
       <Flex direction="column" align="start" gap={10}>
@@ -52,45 +43,9 @@ export default function DetailLayout({ children, dashboard, codes }: Props) {
               New
             </Badge>
           </Flex>
-
-          <Flex align="center" gap={20}>
-            <SegmentedControl
-              radius="md"
-              c="accent.1"
-              value={value}
-              size="sm"
-              className={classes.switchControl}
-              onChange={setValue}
-              data={[
-                {
-                  value: "preview",
-                  label: (
-                    <Center style={{ gap: 10 }}>
-                      <IconEye style={{ width: rem(16), height: rem(16) }} />
-                      <span>Preview</span>
-                    </Center>
-                  ),
-                },
-                {
-                  value: "code",
-                  label: (
-                    <Center style={{ gap: 10 }}>
-                      <IconCode style={{ width: rem(16), height: rem(16) }} />
-                      <span>Code</span>
-                    </Center>
-                  ),
-                },
-              ]}
-            />
-          </Flex>
         </Group>
 
-        <Box className={classes.snippetContainer}>
-          {value === "preview" && children}
-          {value === "code" && (
-            <CodeSnippetTabs files={codes} initialFile={codes[0]} />
-          )}
-        </Box>
+        <Box className={classes.snippetContainer}>{children}</Box>
       </Flex>
     </Stack>
   )
