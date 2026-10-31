@@ -3,7 +3,6 @@ import { Link } from "@remix-run/react"
 import { MantineLogo } from "~/components/MantineLogo"
 import ThemeSwitch from "~/components/ThemeSwitch"
 import SearchControl from "../components/SearchControl"
-import { Footer } from "./Footer"
 import classes from "./styles/AppLayout.module.css"
 
 export default function AppLayout({ children }: Children) {
@@ -43,8 +42,6 @@ export default function AppLayout({ children }: Children) {
       <AppShell.Main px={0} className={classes.main}>
         {children}
       </AppShell.Main>
-
-      <Footer />
     </AppShell>
   )
 }
