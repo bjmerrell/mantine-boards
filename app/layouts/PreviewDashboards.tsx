@@ -12,7 +12,7 @@ export default function PreviewDashboards() {
           4 dashboards
         </Text>
       </Text>
-      <Grid gutter={34} columns={6}>
+      <Grid gap={34} columns={6}>
         {dashboards.map((dashboard) => (
           <Grid.Col key={dashboard.id} span={{ base: 6, md: 6, lg: 3 }}>
             <PreviewCard dashboard={dashboard} />

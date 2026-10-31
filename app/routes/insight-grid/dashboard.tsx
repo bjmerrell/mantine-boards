@@ -7,7 +7,7 @@ export default function Dashboard() {
   return (
     <Stack gap={40}>
       <Group w="100%" align="start" justify="space-between">
-        <Grid flex={1} columns={12} align="center" gutter={14}>
+        <Grid flex={1} columns={12} align="center" gap={14}>
           <Grid.Col maw={200} span={{ base: 6, md: 3 }}>
             <ActionCard content="New document" icon={Add} />
           </Grid.Col>

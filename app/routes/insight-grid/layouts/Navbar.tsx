@@ -146,7 +146,7 @@ const Folder = ({ title, icon: Icon, files }: NavLink) => {
         </Flex>
         {opened && <Minus />}
       </UnstyledButton>
-      <Collapse w="100%" pl={30} in={opened}>
+      <Collapse w="100%" pl={30} expanded={opened}>
         <Flex w="100%" py={14} direction="column" align="start" gap={10}>
           {files.map((file) => (
             <Link key={file.id} className={classes.subNavLink} to={file.link}>

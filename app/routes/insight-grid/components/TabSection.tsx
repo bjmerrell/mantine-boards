@@ -51,7 +51,7 @@ export default function TabSection() {
 
         <Box w="100%" my={30}>
           <Tabs.Panel w="100%" value="1">
-            <Grid columns={3} gutter={20}>
+            <Grid columns={3} gap={20}>
               {folders.map((folder) => (
                 <Grid.Col key={folder.id} span={{ base: 3, md: 1 }}>
                   <FolderCard {...folder} />

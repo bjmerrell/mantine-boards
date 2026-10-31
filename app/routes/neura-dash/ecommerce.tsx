@@ -8,7 +8,10 @@ import TopBrowser from "./charts/TopBrowserChart"
 import dateStyleClasses from "./styles/date.module.css"
 
 export default function Ecommerce() {
-  const [value, setValue] = useState<[Date | null, Date | null]>([null, null])
+  const [value, setValue] = useState<[string | null, string | null]>([
+    null,
+    null,
+  ])
   return (
     <Flex w="100%" direction="column" align="start" gap={30}>
       <Flex w="100%" align="center" justify="space-between">
